@@ -1,0 +1,33 @@
+两种方式：
+  1.在webstorm手动建目录结构
+    1.创建
+      1.新建项目
+      2.terminal 中npm init构建node项目、
+      3.新建目录public和src
+      4.修改package.json的script
+          "start":"react-scripts start"
+      5.创建public/index.html;src/index.js;src/App.js
+    2.运行
+      terminal中  npm start
+  2.利用create-react-app自动创建
+    1.创建：
+      create-react-app 项目名称
+    2.运行：
+      cd 项目目录
+      npm start
+笔记：
+
+参考：https://blog.csdn.net/u011240877/article/details/76582670
+npm:javascript的包管理器，类似于Java的maven
+包是一个可以复用的模块，有一个package.json定义
+npm安装：
+  npm i 等同于npm install ;-g 代表全局安装；npm install package@version；npm uninstall -g <package>
+package.json定义一个包的版本，依赖等信息，这样别人在拿到项目之后才可以使用npm install下载
+  dependencies:生产环境依赖
+  devDependencies：开发环境依赖
+为包添加依赖：
+  1.修改package.json
+  2.npm install --save 或npm install --save -dev;表示将这个包名及对应版本添加到package.json中
+npm可以直接运行package.json中的scripts指定的脚本
+国内镜像：https://npm.taobao.org
+
